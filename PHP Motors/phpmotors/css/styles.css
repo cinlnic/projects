@@ -1,0 +1,633 @@
+body {
+    margin: 0;
+}
+
+/* Header */
+.header {
+    display: flex;
+    flex-direction: row;
+    padding: 8px 0;
+}
+
+.headerimg {
+    width: 50%;
+
+
+}
+
+.header div img {
+    text-align: left;
+    width: 200px;
+    height: 72px;
+
+}
+
+.account {
+    text-align: right;
+    padding: 25px 12px 0 0;
+    width: 50%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #3a3a3a;
+}
+
+.account a {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Nav */
+
+#pagenav ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    background-color: #3a3a3a;
+    padding: 10px;
+    margin: 0px;
+}
+
+#pagenav li a {
+    color: #ffffff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+    font-size: 15px;
+    padding: 0 5px;
+}
+
+#pagenav li a:hover {
+    background-color: #8d8d8d;
+    color: #3a3a3a;
+    padding: 12px;
+}
+
+#pagenav li a:active {
+    background-color: #4c96d7;
+    color: #3a3a3a;
+    padding: 12px;
+}
+
+
+/* Main */
+h1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-left: 10px;
+    font-size: 20px;
+}
+
+h2 {
+    font-size: 18px;
+    margin: 0px 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #4c96d7;
+
+}
+
+h3 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-left: 10px;
+    font-size: 20px;
+}
+
+
+.imgdetails ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #4c96d7;
+}
+
+button {
+    color: #3a3a3a;
+}
+
+.buttonlarge {
+    display: none;
+}
+
+.deloreancar img {
+    width: 100%;
+    position: relative;
+    bottom: 51px;
+    z-index: -1;
+}
+
+.buttonsmall {
+    text-align: center;
+    position: relative;
+    bottom: 30px;
+    z-index: -1;
+    display: block;
+    margin: auto;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    padding: 10px 25px;
+    background-color: #4c96d7;
+
+}
+
+.reviews ul li {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+    padding: 8px 10px;
+}
+
+.reviews {
+    margin: auto;
+
+}
+
+.upgrades {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+}
+
+.boxupgrades {
+    padding: 0px 15px;
+}
+
+.imagecontainer {
+    background-color: #4c96d7;
+    padding: 5px 40px;
+    margin: 0 10px;
+    border: 1px solid black;
+}
+
+.imagecontainer img {
+    width: 46px;
+    height: 56px;
+}
+
+.card {
+    flex: 40%;
+    text-align: center;
+}
+
+.serverError {
+    padding-left: 20px;
+}
+
+ul#inv-display {
+    list-style-type: none !important;
+    display: block;
+    padding: 10px;
+    flex-wrap: wrap;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    justify-content: center;
+
+}
+
+#inv-display li {
+    margin: 10px;
+    border: 2px solid #3a3a3a;
+    text-align: center;
+    padding: 10px;
+}
+
+#vehicle-detail {
+    list-style-type: none !important;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 0px 40px 0px 40px;
+}
+
+#vehicle-detail img {
+    width: 100%;
+    max-width: 800px;
+    list-style-type: none !important;
+}
+
+.priceVehicle {
+    padding-top: 25px;
+    font-size: 30px;
+}
+
+.desVehicle {
+    padding: 20px;
+    margin: 10px 0px;
+    background-color: #4c96d7;
+    color: white;
+}
+.detailOne {
+    list-style-type: none !important;
+    padding: 0px;
+}
+.detailTwo {
+    list-style-type: none !important;
+    padding: 0px;
+}
+
+ul#thumbnail-display {
+    list-style-type: none !important;
+    display: block;
+    text-align: center;
+    padding: 0px;
+}
+#client-review-display{
+    list-style-type:square;
+    text-align: left;
+    margin: 0px;
+}
+#client-review-display li {
+    padding: 10px 0px;
+}
+.signIn h2 {
+    font-size: 30px;
+    padding: 20px 0px 0px 0px;
+}
+.customerReviews {
+    margin: 20px;
+}
+.reviewBox {
+    border: 2px solid black;
+    padding: 10px;
+    margin: 10px 50px;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    
+}
+.review form {
+    justify-content: center;
+}
+#review-display{
+    list-style-type: none;
+    border: 3px solid #3a3a3a;
+    color:#ffffff;
+    margin: 30px 100px;
+    padding: 20px;
+}
+#review-display li {
+    background-color: #4c96d7;
+    padding: 15px;
+    margin: 10px;
+}
+.reviewWords {
+    background-color: #ffffff;
+    display: grid;
+    color: #3a3a3a;
+    margin: 10px;
+    padding: 10px;
+}
+.deleteRed {
+    color: red;
+}
+/* Footer */
+
+footer {
+    border-top: 4px solid #3a3a3a;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 10px;
+    padding: 0px 5px 10px 5px;
+    margin-top: 20px;
+}
+
+/* Login Page */
+.signIn {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.inputField {
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid #3a3a3a;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.submitButton {
+    padding: 10px;
+    margin: 10px;
+    background-color: #4c96d7;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    color: #3a3a3a;
+}
+
+.registerButton {
+    padding: 10px;
+    margin: 10px 18%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border: 1px dashed #3a3a3a;
+    background-color: #8d8d8d;
+    font-size: 15px;
+    color: #ffffff;
+}
+
+.signIn h1 {
+    font-size: 30px;
+}
+
+.signIn ul {
+    list-style-type: none;
+}
+
+.clientData {
+    padding: 10px;
+    margin: 10px;
+    font-size: 20px;
+    background-color: #8d8d8d;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+
+/* Medium View */
+@media screen and (max-width: 1500px) and (min-width:850px) {
+    body {
+        background-image: url("../images/site/small_check.jpg");
+    }
+
+    .container {
+        background-color: #ffffff;
+        border: 5px solid #4c96d7;
+        margin: 1% 12%;
+        border-radius: 10px;
+        z-index: -2;
+    }
+
+    /* Nav */
+    #pagenav ul {
+        padding: 18px;
+        margin: 0px;
+    }
+
+    #pagenav li a {
+        font-size: 15px;
+        padding: 0 13px;
+    }
+
+    #pagenav li a:hover {
+        padding: 20px;
+    }
+
+    #pagenav li a:active {
+        padding: 20px;
+    }
+
+    /*Main*/
+    .buttonsmall {
+        display: none;
+    }
+
+    .buttonlarge {
+        display: block;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 18px;
+        padding: 8px 20px;
+        background-color: #4c96d7;
+        margin: 5px 10px 5px 10px;
+        color: #3a3a3a;
+    }
+
+    .topbox {
+        position: relative;
+    }
+
+    .imgdetails {
+        position: absolute;
+        z-index: 2;
+        margin: 1% 0 0 1%;
+    }
+
+    .deloreancar img {
+        z-index: 0;
+        justify-content: center;
+        bottom: 0px;
+    }
+
+    .switchcontainer {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .reviews ul li {
+        font-size: 20px;
+    }
+
+    .reviews {
+        margin: 0%;
+        width: 50%;
+        order: 2;
+
+    }
+
+    .upgrades {
+        justify-content: left;
+    }
+
+    .boxupgrades {
+        width: 50%;
+    }
+
+    ul#inv-display {
+        justify-content: unset;
+        display: flex;
+        flex-direction: row;
+    }
+
+    #vehicle-detail {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .priceVehicle {
+        padding: 0px;
+    }
+
+    .detailTwo {
+        padding: 10px;
+    }
+    #thumbnailsTitle {
+        display: none;
+    }
+    .displayView {
+        display: flex;
+    }
+    #thumbnail-display{
+        order: 1;
+        margin: 20px 10px;
+    }
+    #thumbnail-display li img{
+        width: 80%;
+        text-align: center;
+    }
+    #vehicle-detail {
+        order: 2;
+        
+    }
+    #thumbnail-display li img:hover, #thumbnail-display li img:active {
+        width: 200%;
+        position: relative;
+    }
+
+    /* Login Page */
+    .signIn {
+        max-width: 600px;
+        margin: auto;
+    }
+}
+
+/* Large View */
+@media screen and (min-width:1500px) {
+    body {
+        background-image: url("../images/site/small_check.jpg");
+    }
+
+    .container {
+        background-color: #ffffff;
+        border: 5px solid #4c96d7;
+        margin: 1% 12%;
+        border-radius: 10px;
+        z-index: -2;
+    }
+
+    /* Nav */
+    #pagenav ul {
+        padding: 20px;
+        margin: 0px;
+    }
+
+    #pagenav li a {
+        font-size: 20px;
+        padding: 0 13px;
+    }
+
+    #pagenav li a:hover {
+        padding: 23px;
+    }
+
+    #pagenav li a:active {
+        padding: 23px;
+    }
+
+    /* Main */
+    h1 {
+        font-size: 35px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    h3 {
+        font-size: 33px;
+    }
+
+    .imgdetails ul {
+        font-size: 25px;
+    }
+
+    .topbox {
+        position: relative;
+    }
+
+    .imgdetails {
+        position: absolute;
+        z-index: 2;
+        margin: 3%;
+    }
+
+    .deloreancar img {
+        z-index: 0;
+        justify-content: center;
+        bottom: 0px;
+    }
+
+    .buttonsmall {
+        display: none;
+    }
+
+    .buttonlarge {
+        display: block;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 25px;
+        padding: 8px 40px;
+        background-color: #4c96d7;
+        margin: 20px 10px 5px 10px;
+        color: #3a3a3a;
+    }
+
+    .switchcontainer {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .reviews {
+        margin: 0%;
+        width: 50%;
+        order: 2;
+
+    }
+
+    .reviews ul li {
+        font-size: 26px;
+        padding: 8px 10px;
+    }
+
+    .upgrades {
+        justify-content: left;
+    }
+
+    .boxupgrades {
+        width: 50%;
+    }
+
+    ul#inv-display {
+        justify-content: unset;
+        display: flex;
+        flex-direction: row;
+    }
+    #vehicle-detail {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .priceVehicle {
+        padding: 0px;
+    }
+
+    .detailTwo {
+        padding: 10px;
+    }
+    #thumbnailsTitle {
+        display: none;
+    }
+    .displayView {
+        display: flex;
+    }
+    #thumbnail-display{
+        order: 1;
+        margin: 20px 10px;
+    }
+    #thumbnail-display li img{
+        width: 80%;
+        text-align: center;
+    }
+    #vehicle-detail {
+        order: 2;
+    }
+    #thumbnail-display li img:hover, #thumbnail-display li img:active {
+        width: 200%;
+        position: relative;
+    }
+    /*Footer*/
+    footer {
+        font-size: 15px;
+    }
+
+    /* Login Page */
+    .signIn {
+        max-width: 600px;
+        margin: auto;
+    }
+}
