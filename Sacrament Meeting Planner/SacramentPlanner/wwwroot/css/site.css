@@ -1,0 +1,101 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification\ 
+for details on configuring this project to bundle and minify static web assets. */
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    font-family:Roboto;
+}
+
+/* Wrapping element */
+/* Set some basic padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Carousel */
+.carousel-caption p {
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+/* Make .svg files in the carousel display properly in older browsers */
+.carousel-inner .item img[src$=".svg"] {
+    width: 100%;
+}
+
+/* QR code generator */
+#qrCode {
+    margin: 15px;
+}
+
+/* Hide/rearrange for smaller screens */
+@media screen and (max-width: 767px) {
+    /* Hide captions */
+    .carousel-caption {
+        display: none;
+    }
+}
+
+.navbar-inverse {
+    background-color: #004b97;
+}
+
+/*Custom CSS*/
+
+.program-background {
+    background-color: white;
+    text-align: center;
+    width: 400px;
+    height: 550px;
+    padding-top: 1px;
+    margin-bottom: 15px;
+}
+
+.program-inner {
+    margin: 20px 45px 20px 45px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.program-heading h5 {
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.program-heading h6 {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.line {
+   width: 100%;
+}
+
+.program-field {
+    line-height: 1em;
+    margin-bottom: 5px;
+    display: flex;
+    flex: 1;
+}
+
+.program-field .program-label {
+    order: 1;
+}
+
+.program-field .program-text {
+    order: 3;
+}
+
+.program-field:after {
+    content: "";
+    margin: 0px 4px;
+    background: -webkit-radial-gradient(50% 50%, circle, black 12%, transparent 15%);
+    background: -moz-radial-gradient(50% 50%, circle, black 12%, transparent 15%);
+    background: radial-gradient(circle at 50% 50%, black 12%, transparent 15%);
+    background-size: 0.5em 0.5em;
+    background-position: 0 0.5em;
+    background-repeat: repeat-x;
+    flex-grow: 1;
+    order: 2;
+}
+

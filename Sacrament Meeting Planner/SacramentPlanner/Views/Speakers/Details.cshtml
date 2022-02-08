@@ -1,0 +1,36 @@
+﻿@model SacramentPlanner.Models.Speaker
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<hr />
+<hr />
+<h2>Speaker</h2>
+<hr />
+<div>
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.SundayID)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Sunday.Date)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Subject)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Subject)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.SpeakerID" class="btn btn-primary">Edit</a>&nbsp;
+    <a asp-action="Index" class="btn btn-default">Back to List</a>
+</div>

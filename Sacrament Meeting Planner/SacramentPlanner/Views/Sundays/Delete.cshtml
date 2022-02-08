@@ -1,0 +1,71 @@
+﻿@model SacramentPlanner.Models.Sunday
+
+@{ ViewData["Title"] = "Delete"; }
+
+<h2>Delete</h2>
+<h3>Are you sure you want to delete this meeting?</h3>
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Date)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Date)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Theme)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Theme)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Conductor)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Conductor)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.OpeningHymn)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.OpeningHymn)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ClosingHymn)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ClosingHymn)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.SacramentHymn)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.SacramentHymn)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.IntermediateSong)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.IntermediateSong)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.OpeningPrayer)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.OpeningPrayer)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ClosingPrayer)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ClosingPrayer)
+        </dd>
+    </dl>
+
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="Id" />
+        <input type="submit" value="Delete" class="btn btn-danger" />&nbsp;
+        <a asp-action="Index" class="btn btn-default">Back to List</a>
+    </form>
+</div>

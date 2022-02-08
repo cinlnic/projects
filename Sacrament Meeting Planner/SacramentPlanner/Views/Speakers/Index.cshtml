@@ -1,0 +1,58 @@
+﻿@model IEnumerable<SacramentPlanner.Models.Speaker>
+
+@{
+    ViewData["Title"] = "Speakers";
+}
+
+<h2 style="margin-top: 100px;">Index</h2>
+
+<p>
+    <a class="btn btn-primary" asp-action="Create">Create New</a>
+</p>
+
+<form asp-controller="Speakers" asp-action="Index">
+    <p>
+        Speaker: <input type="text" name="SearchString">
+        <input type="submit" value="Search" class="btn btn-default">
+    </p>
+</form>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                <a asp-action="Index" asp-route-sortOrder="@ViewData["NameSortParm"]" asp-route-currentFilter="@ViewData["CurrentFilter"]">Name</a>
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Subject)
+            </th>
+            <th>
+                <a asp-action="Index" asp-route-sortOrder="@ViewData["DateSortParm"]" asp-route-currentFilter="@ViewData["CurrentFilter"]">Date</a>
+            </th>
+            <th>
+            </th>
+
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Subject)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Sunday.Date)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.SpeakerID" class="btn btn-default">Edit</a>&nbsp;
+                    <a asp-action="Details" asp-route-id="@item.SpeakerID" class="btn btn-default">Details</a>&nbsp;
+                    <a asp-action="Delete" asp-route-id="@item.SpeakerID" class="btn btn-default">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

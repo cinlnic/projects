@@ -1,0 +1,88 @@
+﻿@model SacramentPlanner.Models.Sunday
+
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<hr />
+<hr />
+<h2>Sacrament Program</h2>
+<hr />
+<div class="program-background">
+    <div class="program-inner">
+        <div class="program-heading">
+            <img class="line" src="~/images/5-2-decorative-line-black-picture.png" />
+            <h5>Far West Ward</h5>
+            <h6>@Html.DisplayFor(model => model.Date)</h6>
+
+        </div>
+        <div class="program-field">
+            <p class="program-label">@Html.DisplayNameFor(model => model.Conductor)</p>
+            <p class="program-text">@Html.DisplayFor(model => model.Conductor)</p>
+        </div>
+        <div class="program-field">
+            <p class="program-label">@Html.DisplayNameFor(model => model.OpeningHymn)</p>
+            <p class="program-text">@Html.DisplayFor(model => model.OpeningHymn)</p>
+        </div>
+        <div class="program-field">
+            <p class="program-label">@Html.DisplayNameFor(model => model.OpeningPrayer)</p>
+            <p class="program-text">@Html.DisplayFor(model => model.OpeningPrayer)</p>
+        </div>
+        <p class="program-full">Ward Business</p>
+        <div class="program-field">
+            <p class="program-label">@Html.DisplayNameFor(model => model.SacramentHymn)</p>
+            <p class="program-text">@Html.DisplayFor(model => model.SacramentHymn)</p>
+        </div>
+        <p class="program-full">Passing of the Sacrament</p>
+
+
+
+        @if (Model.Speakers != null)
+        {
+            var array = (Model.Speakers).ToArray();
+            var first = array.Take(array.Length / 2);
+            var second = array.Skip(array.Length / 2);
+
+            @foreach (var item in first)
+            {
+                <div class="program-field">
+                    <p class="program-label">Speaker</p>
+                    <p class="program-text">@Html.DisplayFor(modelItem => item.Name)</p>
+                </div>
+            }
+            @if (Model.IntermediateSong != null)
+            {
+                <div class="program-field">
+                    <p class="program-label">@Html.DisplayNameFor(model => model.IntermediateSong)</p>
+                    <p class="program-text">@Html.DisplayFor(model => model.IntermediateSong)</p>
+                </div>
+            }
+
+            @foreach (var item in second)
+            {
+                <div class="program-field">
+                    <p class="program-label">Speaker</p>
+                    <p class="program-text">@Html.DisplayFor(modelItem => item.Name)</p>
+                </div>
+            }
+
+        }
+
+
+
+        <div class="program-field">
+            <p class="program-label">@Html.DisplayNameFor(model => model.ClosingHymn)</p>
+            <p class="program-text">@Html.DisplayFor(model => model.ClosingHymn)</p>
+        </div>
+        <div class="program-field">
+            <p class="program-label">@Html.DisplayNameFor(model => model.ClosingPrayer)</p>
+            <p class="program-text">@Html.DisplayFor(model => model.ClosingPrayer)</p>
+        </div>
+        <img class="line" src="~/images/5-2-decorative-line-black-picture.png" />
+    </div>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-primary">Edit</a>&nbsp;
+    <a asp-action="Index" class="btn btn-default">Back to List</a>
+</div>
